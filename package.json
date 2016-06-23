@@ -1,17 +1,16 @@
 {
   "name": "osrm-client-promise",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Client library for OSRM with promises",
   "main": "lib/index.js",
   "scripts": {
+    "build": "babel src/index.js > lib/index.js",
     "test": "standard src && mocha"
   },
+  "keywords": ["osrm", "routing", "TSP"],
   "author": "Rocco De Patto <rocco.depatto@gmail.com> (http://lesion.github.io/)",
   "license": "GPL-3.0",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/lesion/osrm-client-promise.git"
-  },
+  "repository": "github:lesion/osrm-client-promise",
   "dependencies": {
     "es6-promise": "^3.2.1",
     "isomorphic-fetch": "^2.2.1"
